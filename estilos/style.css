@@ -35,9 +35,9 @@
   }
 
 main {
+  position: relative;
   width: 100vw;
   height: 100vh;
-  position: relative;
 }
 
 section#login {
@@ -47,252 +47,24 @@ section#login {
   transform: translate(-50%, -50%);
   overflow: hidden;
   width: 250px;
-  height: 600px;
+  height: 500px;
   background-color: var(--cor02);
   border-radius: 20px;
+  transition: width .3s, height .3s;
+  transition-timing-function: ease;
 }
 
 section#login > div#imagem {
   display: block;
   background: var(--cor05) url(../imagens/pexels-shvets-production-7562089.jpg) no-repeat;
   background-size: cover;
- /* background-position: center; */
+  /*background-position: center;*/
   height: 200px;
 }
 
 section#login > div#formulario{
   display: block;
+  padding: 10px;
   width: 250px;
   border: 2px solid darkgray;
-}
-
-section#login > div#formulario h1{
-  color: var(--cor01);
-  text-align: center;
-
-}
-
-section#login > div#formulario p{
-  text-align: justify;
-  text-indent: 20px;
-
-}
-
-/* Typical Device Breakpoint 
-
-Pequenas telas: até 600px
-Celular: de 600px até 768px
-Tablets: 768 até 992px
-Desktop: 992px até 1200px
-Grandes Telas: acima de 1200px
-*/
-
-@media screen and (min-width=692) and (max-width=798) {
-  body {
-    /* Deixar o fundo degradê */
-    background-image: linear-gradient(to right bottom, var(--cor05) 50%, var(--cor04));
-    width: 100vw;
-    height: 100vh;
-  }
-  main {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-  }
-  
-  section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    width: 250px;
-    height: 600px;
-    background-color: var(--cor02);
-    border-radius: 20px;
-  }
-  
-  section#login > div#imagem {
-    display: block;
-    background: var(--cor05) url(../imagens/pexels-shvets-production-7562089.jpg) no-repeat;
-    background-size: cover;
-   /* background-position: center; */
-    height: 200px;
-  }
-  
-  section#login > div#formulario{
-    display: block;
-    width: 250px;
-    border: 2px solid darkgray;
-  }
-  
-  section#login > div#formulario h1{
-    color: var(--cor01);
-    text-align: center;
-  
-  }
-  
-  section#login > div#formulario p{
-    text-align: justify;
-    text-indent: 20px;
-  
-  }
-  
-}
-
-@media screen and(min-width=768) and (max-width=992) {
-  body {
-    /* Deixar o fundo degradê */
-    background-image: linear-gradient(to right bottom, var(--cor05) 50%, var(--cor04));
-    width: 100vw;
-    height: 100vh;
-  }
-  main {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-  }
-  
-  section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    width: 600px;
-    height: 600px;
-    background-color: var(--cor02);
-    border-radius: 20px;
-  }
-  
-  section#login > div#imagem {
-    display: block;
-    background: var(--cor05) url(../imagens/pexels-shvets-production-7562089.jpg) no-repeat;
-    background-size: cover;
-   /* background-position: center; */
-    height: 200px;
-  }
-  
-  section#login > div#formulario{
-    display: block;
-    width: 250px;
-    border: 2px solid darkgray;
-  }
-  
-  section#login > div#formulario h1{
-    color: var(--cor01);
-    text-align: center;
-  
-  }
-  
-  section#login > div#formulario p{
-    text-align: justify;
-    text-indent: 20px;
-  
-  }
-  
-}
-@media screen and(min-width=992) and (max-width=1200){
-  body {
-    /* Deixar o fundo degradê */
-    background-image: linear-gradient(to right bottom, var(--cor05) 50%, var(--cor04));
-    width: 100vw;
-    height: 100vh;
-  }
-  main {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-  }
-  
-  section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    width: 250px;
-    height: 600px;
-    background-color: var(--cor02);
-    border-radius: 20px;
-  }
-  
-  section#login > div#imagem {
-    display: block;
-    background: var(--cor05) url(../imagens/pexels-shvets-production-7562089.jpg) no-repeat;
-    background-size: cover;
-   /* background-position: center; */
-    height: 200px;
-  }
-  
-  section#login > div#formulario{
-    display: block;
-    width: 250px;
-    border: 2px solid darkgray;
-  }
-  
-  section#login > div#formulario h1{
-    color: var(--cor01);
-    text-align: center;
-  
-  }
-  
-  section#login > div#formulario p{
-    text-align: justify;
-    text-indent: 20px;
-  
-  }
-  
-}
-@media screen and(min-width=1200) {
-  body {
-    /* Deixar o fundo degradê */
-    background-image: linear-gradient(to right bottom, var(--cor05) 50%, var(--cor04));
-    width: 100vw;
-    height: 100vh;
-  }
-  main {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-  }
-  
-  section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    width: 250px;
-    height: 600px;
-    background-color: var(--cor02);
-    border-radius: 20px;
-  }
-  
-  section#login > div#imagem {
-    display: block;
-    background: var(--cor05) url(../imagens/pexels-shvets-production-7562089.jpg) no-repeat;
-    background-size: cover;
-   /* background-position: center; */
-    height: 200px;
-  }
-  
-  section#login > div#formulario{
-    display: block;
-    width: 250px;
-    border: 2px solid darkgray;
-  }
-  
-  section#login > div#formulario h1{
-    color: var(--cor01);
-    text-align: center;
-  
-  }
-  
-  section#login > div#formulario p{
-    text-align: justify;
-    text-indent: 20px;
-  
-  }
-  
 }
