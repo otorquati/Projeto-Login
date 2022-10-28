@@ -64,6 +64,10 @@ section#login > div#imagem {
   height: 200px;
 }
 
+/* 
+ Formatação do Formulário de Login 
+*/
+
 section#login > div#formulario{
   display: block;
   padding: 5px;
