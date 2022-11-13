@@ -108,7 +108,6 @@ div.campo > i{
 }
 
 div.campo > input{
-  color: white;
   background-color: var(--cor02);
   font-size: 1em;
   width: calc(100% - 44px);
@@ -116,7 +115,8 @@ div.campo > input{
   border: 0px;
   padding: 4px;
   border-radius: 8px;
-  transform: translateY(-10px);
+  color: white;
+  transform: translate(44px, -40px);
 
 }
 
